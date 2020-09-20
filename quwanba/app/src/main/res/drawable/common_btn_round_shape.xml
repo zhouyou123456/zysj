@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 普通按钮（登录注册...）button -->
+    <item android:state_pressed="true" android:state_enabled="true">
+        
+        <shape
+            android:shape="rectangle">             
+		    <!-- 填充的颜色 --> 
+		    <solid android:color="#4c9bff" />
+		    <!-- 设置按钮角为弧形 --> 
+		    <corners android:radius="5dp" />	
+		    <!-- 渐变-->
+		    <gradient
+		        android:startColor="#4c9bff"
+		        android:centerColor="#4c9bff"
+		        android:endColor="#4c9bff"/>
+		         
+    	     
+			<!-- 描边 
+		    <stroke
+		        android:width="2dp"
+		        android:color="@android:color/black"
+		        android:dashWidth="1dp"
+		        android:dashGap="2dp"/>   
+		        -->
+        </shape>
+    </item>
+    
+    <item android:state_focused="true" android:state_enabled="true">
+        <shape
+            android:shape="rectangle">             
+		    <!-- 填充的颜色 --> 
+		    <solid android:color="#FF9A00" />
+		    <!-- 设置按钮角为弧形 --> 
+		    <corners android:radius="5dp" />	
+		    
+		    <!-- 渐变
+		    <gradient
+		        android:startColor="#00A6A6"
+		        android:centerColor="#15FFFF"
+		        android:endColor="#15FFFF"/>
+		         -->
+		    
+			<!-- 描边 
+		    <stroke
+		        android:width="2dp"
+		        android:color="@android:color/black"
+		        android:dashWidth="1dp"
+		        android:dashGap="2dp"/>   
+		        --> 
+        </shape>
+    </item>
+    
+    <item android:state_pressed="false">
+        <shape
+            android:shape="rectangle">             
+		    <!-- 填充的颜色 --> 
+		    <solid android:color="#4c9bff" />
+		    <!-- 设置按钮角为弧形 --> 
+		    <corners android:radius="5dp" />		     
+			<!-- 描边
+		    <stroke
+		        android:width="2dp"
+		        android:color="@android:color/black"
+		        android:dashWidth="1dp"
+		        android:dashGap="2dp"/>  
+		         --> 
+        </shape>
+    </item>
+</selector>

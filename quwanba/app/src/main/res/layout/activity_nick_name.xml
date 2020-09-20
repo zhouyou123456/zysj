@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="#4c9bff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp">
+
+            <LinearLayout
+                android:id="@+id/layout_back"
+                android:layout_width="40dp"
+                android:layout_height="66dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/login_return" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:text="昵称"/>
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_margin="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="保存"
+                style="@style/common_btn_style"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/nickNameLayout"
+            style="@style/my_setting_layout_padding_bg_style"
+            android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/nick_name_edt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical|right"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

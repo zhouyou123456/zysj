@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2013 47 Degrees, LLC
+  ~  http://47deg.com
+  ~  hello@47deg.com
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~  You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  See the License for the specific language governing permissions and
+  ~  limitations under the License.
+  -->
+
+<resources>
+
+    <dimen name="publish_want_route_btn_padding">15dp</dimen>
+    
+    <!-- Default -->
+    <dimen name="radius_default">3dp</dimen>
+    <dimen name="padding_default">8dp</dimen>
+    <dimen name="margin_default">5dp</dimen>
+    <dimen name="line_default">1dp</dimen>
+
+    <!-- Products -->
+    <dimen name="height_list">100dp</dimen>
+    <dimen name="size_list_image">64dp</dimen>
+    <dimen name="font_size_title">17sp</dimen>
+    <dimen name="font_size_description">15sp</dimen>
+
+    <dimen name="margin_setting">20dp</dimen>
+
+    <dimen name="font_size_new_tag">11sp</dimen>
+    <dimen name="padding_new_tag">3dp</dimen>
+    
+    <dimen name="padding_right">13dp</dimen>
+    
+    <dimen name="pop_width">135dp</dimen>
+    <dimen name="pop_width2">110dp</dimen>
+        
+	<dimen name="publish_want_margin">10dp</dimen>
+	
+	<!-- 景点图像高度 -->
+	<dimen name="scenic_item_height">200dp</dimen>
+	<!-- 景点列表底部空隙 -->
+	<dimen name="scenic_item_bottom">0dp</dimen>
+	<!-- 时间地点标签页,时间布局宽度 -->
+	<dimen name="want_time_layout_width">30dp</dimen>
+	
+	
+	<!-- 旅游服务主页面 -->
+	
+	<!-- 星星大小 -->
+	<dimen name="star_width">15dp</dimen>
+	<dimen name="star_height">15dp</dimen>
+		
+	<dimen name="travel_tool_icon_width">20dp</dimen>
+	<dimen name="travel_tool_icon_height">20dp</dimen>
+	
+	<!-- 点评的星星大小 -->
+	<dimen name="star_level_width">30dp</dimen>
+	<dimen name="star_level_height">30dp</dimen>
+
+	
+	<!-- 个人主页的星星大小 -->
+	<dimen name="self_zone_star_width">8dp</dimen>
+	<dimen name="self_zone_star_height">8dp</dimen>
+	
+	<!-- 个人主页的星星大小 -->
+	<dimen name="self_zone_section_margin">25dp</dimen>
+	<dimen name="self_zone_line_margin">5dp</dimen>
+	
+	<!-- 活跃度等的星星左边距 -->
+	<dimen name="self_zone_person_start_left_margin">5dp</dimen>
+	
+	<!-- 活跃度等的星星左边距 -->
+	<dimen name="self_zone_auth_icon_left_margin">4dp</dimen>
+	<dimen name="self_zone_auth_icon_top_margin">5dp</dimen>
+	
+	<dimen name="self_zone_auth_layout_width">30dp</dimen>		
+	<dimen name="self_zone_auth_text_size">8sp</dimen>
+	<dimen name="self_zone_auth_icon_size">22dp</dimen>
+		
+	<!-- 面对面4个字体的间隔 -->
+	<dimen name="face_to_face_text_margin">15dp</dimen>
+	<dimen name="face_to_face_text_size">35sp</dimen>
+	<dimen name="face_to_face_text_width">25dp</dimen>
+	
+	
+	<!-- 面对面键盘宽度 -->
+	<dimen name="face_to_face_key_width">40dp</dimen>
+	<dimen name="face_to_face_key_height">50dp</dimen>
+	<dimen name="face_to_face_key_stoke">0.5dp</dimen>
+	<dimen name="face_to_face_icon_width">50dp</dimen>
+	
+	<!-- 我旅行信息 -->
+	<dimen name="my_travel_info_title_height">45dp</dimen>
+	<dimen name="my_travel_info_title_textsize">16sp</dimen>
+	<dimen name="my_travel_info_edit_textsize">17sp</dimen>
+	<dimen name="my_travel_info_edit_paddingLeft">13dp</dimen>
+	<dimen name="my_travel_info_edit_paddingTop">10dp</dimen>
+
+	<!-- 搭伴，目的地列表ITEM高度 -->
+	<dimen name="want_route_item_height">65dp</dimen>
+	<!-- 头像高度 -->
+	<dimen name="want_route_head_img_height">45dp</dimen>
+	<!-- 性别图标高度 -->
+	<dimen name="want_route_gender_img_height">10dp</dimen>
+
+	<!-- 认证图标高度 -->
+	<dimen name="want_route_auth_img_height">20dp</dimen>
+	
+	<!-- 添加联系人图标高度 -->
+	<dimen name="add_friend_img_height">30dp</dimen>
+	
+	<!-- 发现图标高度 -->
+	<dimen name="find_main_img_height">30dp</dimen>
+	
+	<!-- 评论高度 -->
+	<dimen name="comment_height">35dp</dimen>
+		
+	<!-- 我的设置图标高度 -->
+	<dimen name="my_setting_img_height">20dp</dimen>
+	
+	<!-- 我的设置GO高度 -->
+	<dimen name="my_setting_go_height">15dp</dimen>
+	
+	<!-- 个人信息小字体大小 -->
+	<dimen name="my_info_small_font_size">12sp</dimen>
+	
+	<!-- 发现ITEM高度 -->
+	<dimen name="find_main_item_height">45dp</dimen>
+	
+	<!-- 搜索图标大小 -->
+	<dimen name="search_icon_size">25dp</dimen>
+	
+	<!-- 消息列表小头像图标大小 -->
+	<dimen name="msg_list_small_head_icon_size">20dp</dimen>
+		
+	<!-- 消息个数（红点）图标大小 -->
+	<dimen name="msg_count_icon_size">18dp</dimen>
+	
+	<!-- 一般头像大小 -->
+	<dimen name="common_head_icon_size">50dp</dimen>
+		
+	<!-- 旅游服务中的星星相对左边间隙 -->
+	<dimen name="star_margin_left">2dp</dimen>
+	
+		
+						
+</resources>

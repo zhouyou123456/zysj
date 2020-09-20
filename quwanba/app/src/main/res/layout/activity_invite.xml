@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="#4c9bff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp">
+
+            <LinearLayout
+                android:id="@+id/layout_back"
+                android:layout_width="40dp"
+                android:layout_height="66dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/login_return" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:text="我的二维码"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_code"
+        android:layout_height="280dp"
+        android:layout_width="280dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/canvas"
+        />
+
+    <Button
+        android:id="@+id/tuiguangBtn"
+        style="@style/common_btn_style"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_code"
+        android:layout_marginTop="30dp"
+        android:text="进入推广中心"
+        android:textSize="17sp" />
+
+</RelativeLayout>

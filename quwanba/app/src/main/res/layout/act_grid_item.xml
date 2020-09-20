@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <!-- 网络状态条 -->
+    <LinearLayout
+        android:id="@+id/netStateBarLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ffd8d8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="13dp"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="13dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tishi" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="当前网络不可用，请检查网络设置"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/go" />
+    </LinearLayout>
+
+
+        
+    <!-- 活动列表项-->     
+    <LinearLayout
+        android:id="@+id/actLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:orientation="vertical">
+
+		<androidx.cardview.widget.CardView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_marginBottom="8dp">
+			<!-- 第三行 活动封面图片 -->
+			<ImageView
+				android:id="@+id/actCoverImg"
+				android:layout_width="fill_parent"
+				android:layout_height="150dp"
+				android:scaleType="fitXY"/>
+
+
+			<!--  第二行 活动标题 -->
+			<TextView
+				android:id="@+id/actTittleTxt"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:layout_marginLeft="8dp"
+				android:layout_marginRight="8dp"
+				android:lineSpacingExtra="2dp"
+				android:maxLength="30"
+				android:textColor="#000"
+				android:textSize="8sp"
+				android:text="星期天去万绿湖游玩，召集活动开始"/>
+            
+
+	
+	        <!-- 右边信息 -->
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:orientation="horizontal"
+				>
+
+				<com.xidian.quwanba.widget.CircleImageView
+					android:id="@+id/headImg"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:layout_marginTop="4dp"
+					android:gravity="right"
+					android:scaleType="centerCrop"
+					android:src="@mipmap/user_default_head_img"/>
+
+	
+	                <!-- 性别图标 -->
+	                <ImageView
+	                    android:visibility="gone"
+	                    android:id="@+id/genderImg"
+	                    android:layout_width="16dp"
+	                    android:layout_height="16dp"
+	                    android:scaleType="fitCenter" 
+	                    android:src="@mipmap/manflag"/>
+	
+	                <!-- 用户名 -->
+	                <TextView
+	                    android:id="@+id/nickNameTxt"	                    
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="2dp" 
+	                    android:textColor="#414141"
+						android:layout_gravity="center_vertical"
+	                    android:textSize="9sp"
+	                    android:text="Fairy tale"/>
+
+	
+	                <!-- 发布时间 -->
+	                <TextView
+	                    android:id="@+id/pubTimeTxt"
+	                    android:textColor="#797979"
+	                    android:textSize="10sp"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="3dp"
+						android:visibility="gone"
+	                    android:text="3月15发布"/>
+
+	
+
+	            	            
+	            <!-- 第四行 参加人数 活动费用 -->
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:paddingTop="5dp"
+	                android:paddingBottom="5dp"
+	                android:layout_marginRight="38dp"
+	                android:orientation="horizontal"
+					android:visibility="gone">
+	
+	                <TextView
+	                    android:id="@+id/joinTxt"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textColor="#797979"
+	                    android:textSize="13sp" 
+	                    android:text="参加 15人"/>
+	
+	                <TextView
+	                    android:id="@+id/costTxt"
+	                    android:layout_width="0dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_weight="1"
+	                    android:gravity="right" 
+	                    android:textColor="#797979"
+	                    android:textSize="13sp" 	                    
+	                    android:text="费用 150"/>
+	
+	            </LinearLayout>
+	        </LinearLayout>
+			</LinearLayout>
+		</androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

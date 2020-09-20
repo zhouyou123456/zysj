@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e7e7e7"
+    tools:context=".ui.HomeFragment">
+
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#4c9bff"
+            android:orientation="vertical">
+            <!-- 头像 -->
+            <LinearLayout
+                android:id="@+id/headLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="13dp">
+
+                <com.xidian.quwanba.widget.CircleImageView
+                    android:id="@+id/headImg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/user_default_head_img" />
+
+                <TextView
+                    android:id="@+id/nameTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="点击登录"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_setting"
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/new_setting"
+                android:layout_marginTop="36dp"
+                android:layout_marginRight="10dp"
+                />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/layout_round_white_shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="我的订单" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5" />
+
+            <com.xidian.quwanba.widget.MyGridView
+                android:id="@+id/gview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:numColumns="5"></com.xidian.quwanba.widget.MyGridView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/layout_round_white_shape"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/inviteLayout"
+                style="@style/my_setting_layout_padding_bg_style"
+                android:layout_width="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- 左边 -->
+                <ImageView
+                    android:id="@+id/iv_invite"
+                    android:layout_width="@dimen/my_setting_img_height"
+                    android:layout_height="@dimen/my_setting_img_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/invite" />
+
+                <TextView
+                    style="@style/my_setting_big_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_invite"
+                    android:text="邀请有礼" />
+
+                <ImageView
+                    android:layout_width="@dimen/my_setting_go_height"
+                    android:layout_height="@dimen/my_setting_go_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/go" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chuzuInfoLayout"
+                style="@style/my_setting_layout_padding_bg_style"
+                android:layout_width="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- 左边 -->
+                <ImageView
+                    android:id="@+id/iv_shiming"
+                    android:layout_width="@dimen/my_setting_img_height"
+                    android:layout_height="@dimen/my_setting_img_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/shiming" />
+
+                <TextView
+                    style="@style/my_setting_big_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_shiming"
+                    android:text="实名认证" />
+
+                <ImageView
+                    android:layout_width="@dimen/my_setting_go_height"
+                    android:layout_height="@dimen/my_setting_go_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/go" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fundLayout"
+                style="@style/my_setting_layout_padding_bg_style"
+                android:layout_width="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- 左边 -->
+                <ImageView
+                    android:id="@+id/iv_fund"
+                    android:layout_width="@dimen/my_setting_img_height"
+                    android:layout_height="@dimen/my_setting_img_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/favior" />
+
+                <TextView
+                    style="@style/my_setting_big_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_fund"
+                    android:text="个人收藏" />
+
+                <ImageView
+                    android:layout_width="@dimen/my_setting_go_height"
+                    android:layout_height="@dimen/my_setting_go_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/go" />
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
